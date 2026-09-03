@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-groq
+langchain-text-splitters
+langchain-huggingface
+langgraph
+groq
+flask
+python-dotenv
+pypdf
+gunicorn

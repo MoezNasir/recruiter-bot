@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recruiterbot"
+version = "0.1.0"
+description = "A recruiter chatbot with LLM-powered intelligence"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-community",
+    "langchain-groq",
+    "langchain-text-splitters",
+    "langchain-huggingface",
+    "langgraph",
+    "scikit-learn",
+    "groq",
+    "flask",
+    "python-dotenv",
+    "pypdf",
+    "gunicorn",
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+]
