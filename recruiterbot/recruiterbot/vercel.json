@@ -1,0 +1,1 @@
+{ "version": 2, "builds": [ { "src": "api/index.py", "use": "@vercel/python" } ], "routes": [ { "src": "/(.*)", "dest": "api/index.py" } ] } The missing "version": 2 line was almost certainly why Vercel rejected the file — this legacy config format requires it explicitly.
